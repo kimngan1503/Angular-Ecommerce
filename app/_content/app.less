@@ -1,0 +1,405 @@
+// global application styles
+a {
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+
+.containerBox{
+    max-width: 3000px;
+    background-color: black;
+    margin: 0 auto;
+    height: 6000px
+}
+.banner{
+    text-align: center;
+    margin: 0 auto;
+}
+.banner__heading{
+    font-weight: 700;
+    color: #ffc87a;
+    font-size: 6rem;
+    padding-top: 200px;
+}
+.banner__desc{
+    padding-top: 20px;
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 500;
+}
+
+.category{
+    margin-top: 300px;
+    max-width: 2700px;
+    margin-left: 150px;
+}
+.category__list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+  }
+  
+  .category__item {
+    // width: calc(25% - 22.5px);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: #141111;
+  }
+  
+  .category__item {
+    // width: calc(100% - 22.5px);
+    margin-bottom: 2.5rem;
+  }
+  .category__item:first-child {
+    box-shadow: 0 20px 35px -5px rgba(255, 151, 195, 0.25);
+  }
+  
+  .category__item:nth-child(2) {
+    box-shadow: 0 20px 35px -5px rgba(255, 112, 109, 0.25);
+  }
+  
+  .category__item:nth-last-child(2) {
+    box-shadow: 0 20px 35px -5px rgba(133, 152, 255, 0.25);
+  }
+  
+  .category__item:last-child {
+    box-shadow: 0 20px 35px -5px rgba(255, 200, 122, 0.25);
+  }
+  
+  .category__image {
+    border-radius: inherit;
+    object-fit: cover;
+    margin-bottom: 4rem;
+    width: 500px;
+    height: 23rem;
+  }
+  
+  .category__name, .category__detail {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .category__name {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #1a2b5f;
+    font-weight: 600;
+  }
+  
+  .category__detail {
+    font-size: 1.4rem;
+    color: #cdb594;
+    margin-top: auto;
+  }
+  
+  .category__detail i {
+    margin-left: 1.5rem;
+  }
+  
+
+// ==================================================================
+// FEATURE
+  .feature {
+    padding-top: 18rem;
+    max-width: 3000px;
+    margin: 0 auto;
+  }
+  
+  .feature__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 15rem;
+  }
+  
+  .feature__item:nth-child(odd) .feature__info {
+    padding-left: 30rem;
+  }
+  
+  .feature__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .feature__item:nth-child(even) .feature__info {
+    padding-right: 10rem;
+  }
+  
+  .feature__image, .feature__info {
+    width: 50%;
+  }
+  
+  .feature__image{
+    margin-left: 200px;
+    height: 1000px;
+    width: 700px;
+  }
+  .feature__title {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    color: #ffc87a;
+  }
+  
+  .feature__desc {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    line-height: 2.5rem;
+    color: #cdb594;
+    margin-right: 100px;
+  }
+  
+  .feature-intro__item {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    color: #1a2b5f;
+  }
+  
+  .feature-intro__item--circle {
+    text-decoration: none;
+    position: relative;
+    padding-left: 3rem;
+  }
+  
+  .feature-intro__item--circle:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4rem;
+    background-color: #cdb594;
+    transform: translateY(-50%);
+  }
+  
+  .feature-intro__item--circle:nth-child(2):before {
+    background-color: #cdb594;
+  }
+  
+  .feature-intro__item--circle:nth-child(3):before {
+    background-color: #cdb594;
+  }
+  
+  .feature-intro__item--circle:last-child:before {
+    background-color: #cdb594;
+  }
+  .colorText{
+    color: #cdb594;
+  }
+  .feature-best__icon {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    color: #ffa400;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .feature-best__icon--green {
+    color: #07a787;
+  }
+  
+  .feature-best__icon--purple {
+    color: purple;
+  }
+  
+  .feature-best__icon--red {
+    color: #ff7870;
+  }
+  
+  .feature-best__icon:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: currentColor;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.25;
+  }
+  
+  .feature-best__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-best__desc {
+    font-weight: 300;
+  }
+  
+  .feature-best__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .feature-best__item {
+    width: calc(50% - 3rem);
+    margin-top: 5rem;
+  }
+
+//   ===============================================================
+// FOOTER
+  .footer{
+      max-width: 2000px;
+      margin-left: 500px;
+  }
+  .footer__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0;
+  }
+  
+  .footer__item {
+    margin-left: 100px;
+  }
+  
+  .footer__link {
+    display: block;
+    color: #cdb594;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    width: fit-content;
+    // margin-left: 20rem;
+  }
+
+// =======================================================================================
+// =======================================================================================
+// =======================================================================================
+// MOTORSPORT
+.containerMS{
+  max-width: 3000px;
+}
+.banner1{
+  padding-top: 500px;
+  background-size: cover;
+  height: 1600px;
+}
+.text{
+  font-size: 4rem;
+  font-weight: 500;
+  color: white;
+  margin-left: 200px;
+}
+.text1{
+  font-size: 15rem;
+  font-weight: 900;
+  color: white;
+  margin-left: 200px;
+  margin-top: -30px;
+}
+.motorsport{
+  max-width: 2800px;
+  display: flex;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+.picture{
+  width: 50%;
+}
+.picture__image{
+  height: 700px;
+  width: 1200px;
+  border-radius: 5px;
+}
+.content{
+  width: 50%;
+}
+.content--tile{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+  line-height: 3.5rem;
+  color: #cdb594;
+}
+.button{
+  margin-top: 200px;
+  font-size: 3rem;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+  
+// ===========================================================================
+// ===========================================================================
+// CLUB
+.containerClub{
+  max-width: 3000px;
+}
+.bannerClub{
+  padding-top: 200px;
+  background-size: cover;
+  height: 1600px;
+}
+.textClub{
+  font-size: 15rem;
+  font-weight: 900;
+  color: white;
+  margin-left: 100px;
+}
+.text1Club{
+  font-size: 15rem;
+  font-weight: 900;
+  color: white;
+  margin-left: 100px;
+  margin-top: -20px;
+}
+
+.club{
+  max-width: 2800px;
+  display: flex;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+.pictureClub{
+  width: 60%;
+  margin-left: 80px;
+}
+.picture__imageClub{
+  height: 1000px;
+  width: 1400px;
+  border-radius: 5px;
+}
+.contentClub{
+  width: 40%;
+}
+.titleClub{
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: #ffc87a;
+}
+.content--tileClub{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+  line-height: 3.5rem;
+  color: #cdb594;
+}

@@ -1,0 +1,34 @@
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <a class="logo">
+        <span class="logo__text" style="font-size: 3rem; color: #ffc87a;">Playground</span>
+    </a>
+    <div class="navbar-nav" style="font-size: 1.2rem; margin-left: 50px">
+        <a class="nav-item nav-link" style="margin-left: 20px;" routerLink="/">HOME</a>
+        <a class="nav-item nav-link" style="margin-left: 20px;" routerLink="/motorsport">MOTORSPORT</a>
+        <a class="nav-item nav-link" style="margin-left: 20px;" routerLink="/store">STORE</a>
+        <a class="nav-item nav-link" style="margin-left: 20px;" routerLink="/club">CLUB</a>
+        <a class="nav-item nav-link" (click)="logout()" style="margin-left: 1800px;">Logout</a>
+        <div style="display: flex; color:#ffc87a; margin-left: 50px">
+            <img src="https://nhadatnhontrach.vn/no-avatar.jpg" style="height: 3rem; width: 3rem">
+            <h2 style="margin-left: 15px;">Welcome {{currentUser.lastName}}!</h2>
+        </div>
+    </div>
+</nav>
+
+
+<!-- main app container -->
+<!-- <div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="containerBox">
+    <router-outlet></router-outlet>
+</div>
